@@ -3600,9 +3600,9 @@ gatsby-source-filesystem@1.5.18:
     slash "^1.0.0"
     valid-url "^1.0.9"
 
-gatsby-transformer-sharp@1.6.17:
-  version "1.6.17"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.17.tgz#a0c36d02ac1ef056cccd01e27209795b2367d2b1"
+gatsby-transformer-sharp@1.6.18:
+  version "1.6.18"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.18.tgz#55dd46596bec75cd92bf3b76f2db1e04502a99da"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
