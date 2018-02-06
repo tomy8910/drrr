@@ -1,0 +1,15 @@
+html {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #555;
+}
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button {
+	padding: 0;
+	border: 0;
+	background-color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
