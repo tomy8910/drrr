@@ -9,11 +9,12 @@ class TemplateWrapper extends React.Component {
   componentDidMount() {
     Webfont.load({
       google: {
-        families: ['Josefin Sans']
+        families: ['Josefin Sans:100,100i,300,300i,400,400i,600,600i,700,700i']
       }
     })
   }
   render() {
+    const { children } = this.props
     return (
       <div>
         <Helmet
