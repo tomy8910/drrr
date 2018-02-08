@@ -34,15 +34,22 @@ class HouseGreen extends Component {
           opacity: 0
         })
       )
-
-    TweenMax.to(this.circle, 4, {
-      attr: {
-        cx: 415.897,
-        cy: 270,
-        rx: 150.244,
-        ry: 90
-      }
-    })
+      .add(
+        TweenMax.to(this.circle, 1, {
+          attr: {
+            cx: 415.897,
+            cy: 270,
+            rx: 220,
+            ry: 150
+          }
+        })
+      )
+      .add(
+        TweenMax.to(this.house, 2, {
+          y: 130,
+          opacity: 0
+        })
+      )
   }
   render() {
     return (
