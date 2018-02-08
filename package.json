@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bezier-easing": "2.0.3",
     "gatsby": "^1.9.183",
     "gatsby-image": "1.0.35",
     "gatsby-link": "^1.6.36",
