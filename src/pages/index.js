@@ -3,90 +3,75 @@ import { navigateTo } from 'gatsby-link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styled from 'styled-components'
-import { TweenMax } from 'gsap'
-import { width } from 'window-size'
-import House from '../components/HouseGreen'
 
 const IndexDiv = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+
   justify-content: center;
-  align-items: center;
   overflow: hidden;
 `
-
-const MainDiv = styled.div`
+const Body = styled.main`
   flex: 1;
+`
+const Hero = styled.div`
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 `
 
-const PseudoButtonContainer = styled.div`
-  margin-top: 24px;
-  width: 500px;
-  display: flex;
-  justify-content: space-around;
-`
-const Button = styled.button`
-  /* color: #333; */
-  font-size: 1rem; /* ms(0)*/
+const SmallBigSpaced = styled.span`
   font-variant: small-caps;
-  /* font-weight: 500; */
-  border: 1px solid #333;
-  border-radius: 2px;
-  background-color: #444;
-  color: white;
-  padding: 8px 16px;
-  letter-spacing: 1px;
+  font-size: 1.333rem;
+  letter-spacing: 30px;
+  margin-bottom: 60px;
+  font-weight: 900;
+`
+const ColumnSpecial = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5.61rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  justify-content: space-around;
+  height: 250px;
 `
 
-const Powerful = styled.h1`
-  text-transform: uppercase;
-  font-size: 7.478rem; /* ms(7) */
+const Smaller = styled.span`
+  font-size: 1.333rem;
   font-weight: 700;
 `
+
+const MoreSpacing = styled.div`
+  letter-spacing: 5px;
+`
 class IndexPage extends React.Component {
-  // componentDidMount() {
-  // 	TweenMax.to(this.main, 8, { y: 500 })
-  // }
-
-  changePage = url => {
-    // switch (url.replace(/[/]/g, '')) {
-    // 	case 'landslides':
-    // 		console.log('landslides')
-    // 		break
-
-    // 	case 'sinkholes':
-    // 		console.log('Sinkholes')
-    // 		break
-    // }
-    // apply animations depending on url
-    // landslides vs sinkholes
-
-    return () => {
-      setTimeout(() => navigateTo(url), 2000)
-    }
-  }
-
   render() {
     return (
       <IndexDiv>
-        {/* <Header />
-        <MainDiv>
-          <Powerful>Discover</Powerful>
-          <PseudoButtonContainer>
-            <Button onClick={this.changePage('/landslides/')}>
-              landslides
-            </Button>
-            <Button onClick={this.changePage('/sinkholes/')}>sinkholes</Button>
-          </PseudoButtonContainer>
-        </MainDiv>
-        <Footer>Hello Nigga</Footer> */}
-
-        <House />
+        <Header />
+        <Body>
+          <Hero>
+            <SmallBigSpaced>what are</SmallBigSpaced>
+            <ColumnSpecial>
+              <MoreSpacing>Landslides</MoreSpacing>
+              <Smaller>&</Smaller>
+              <MoreSpacing>Sinkholes</MoreSpacing>
+            </ColumnSpecial>
+            {/* INSERT SOME FACE DOWN CHEVRON HERE */}
+            <svg
+              viewBox="0 0 24 24"
+              className="mds-icon pulse animated flash infinite"
+            >
+              <path d="M3.515 7.757L12 16.243l8.485-8.486" />
+            </svg>
+          </Hero>
+          <div style={{ height: '100vh', backgroundColor: 'red' }} />
+        </Body>
+        <Footer />
       </IndexDiv>
     )
   }

@@ -13,3 +13,5 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
     })
   }
 }
+
+// ADD SMOOTH SCROLL TO EXLUCE SINCE IT USES WINDOWS

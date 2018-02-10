@@ -1,15 +1,25 @@
 html {
-	font-family: 'Josefin Sans', sans-serif;
-	color: #555;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #555;
 }
 button::-moz-focus-inner {
-	border: 0;
-	padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 button {
-	padding: 0;
-	border: 0;
-	background-color: white;
-	font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.mds-icon {
+  width: 48px;
+  stroke-linecap: square;
+  stroke-linejoin: square;
+  stroke-miterlimit: 0.5px;
+  fill: none;
+  stroke: #555;
+  stroke-width: 1px;
 }

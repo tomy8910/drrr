@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "animate.css": "3.6.1",
     "bezier-easing": "2.0.3",
     "gatsby": "^1.9.183",
     "gatsby-image": "1.0.35",
@@ -17,6 +18,7 @@
     "gatsby-transformer-sharp": "1.6.18",
     "gsap": "1.20.3",
     "react-helmet": "^5.2.0",
+    "smoothscroll-polyfill": "0.4.0",
     "styled-components": "3.1.6",
     "webfontloader": "1.6.28"
   },
