@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
 import Link from 'gatsby-link'
 
-const SpecialListItem = styled(Link)`
+const SpecialListItem = styled.li`
   font-variant: small-caps;
   font-size: 1rem; /* ms(0) */
   padding: 0 10px 0 10px;
-  text-decoration: none;
   color: #555;
+  list-style: none;
 
   ${props =>
     props.push &&
@@ -28,11 +28,9 @@ class Header extends Component {
   render() {
     return (
       <FlexMe>
-        <SpecialListItem push="true" to="/us/">
-          Hello First
-        </SpecialListItem>
-        <SpecialListItem to="/landslides/">landslides</SpecialListItem>
-        <SpecialListItem to="/sinkholes/">sinkholes</SpecialListItem>
+        <SpecialListItem push="true">Hello First</SpecialListItem>
+        <SpecialListItem>landslides</SpecialListItem>
+        <SpecialListItem>sinkholes</SpecialListItem>
       </FlexMe>
     )
   }
