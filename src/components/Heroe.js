@@ -24,7 +24,6 @@ const ColumnSpecial = styled.div`
   font-weight: 900;
   text-transform: uppercase;
   justify-content: space-around;
-  height: 250px;
 `
 
 const Smaller = styled.span`

@@ -23,3 +23,19 @@ button {
   stroke: #555;
   stroke-width: 1px;
 }
+
+.headroom--pinned {
+  transform: translateY(0%);
+  box-shadow: 0;
+}
+
+.headroom--pinned.headroom--not-top {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.18);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+.headroom {
+  will-change: transform;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease;
+}

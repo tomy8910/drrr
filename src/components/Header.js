@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
-import Link from 'gatsby-link'
+import _throttle from 'lodash.throttle'
+import Headroom from 'headroom.js'
 
 const SpecialListItem = styled.li`
   font-variant: small-caps;
@@ -18,16 +19,28 @@ const SpecialListItem = styled.li`
 
 const FlexMe = styled.nav`
   display: flex;
-
+  position: fixed;
+  top: 0;
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
   height: 40px;
   background-color: #eee;
   align-items: center;
+
+  &.headroom {
+    color: red;
+  }
 `
 
 class Header extends Component {
+  componentDidMount() {
+    const headroom = new Headroom(this.nav)
+
+    headroom.init()
+  }
   render() {
     return (
-      <FlexMe>
+      <FlexMe innerRef={a => (this.nav = a)}>
         <SpecialListItem push="true">Hello First</SpecialListItem>
         <SpecialListItem>landslides</SpecialListItem>
         <SpecialListItem>sinkholes</SpecialListItem>
