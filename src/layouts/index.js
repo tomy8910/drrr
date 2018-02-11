@@ -11,7 +11,6 @@ if (typeof window !== 'undefined') {
 if (typeof window !== 'undefined') {
   require('smoothscroll-polyfill').polyfill()
 }
-console.log(document.body.scrollIntoView.toString())
 
 class TemplateWrapper extends React.Component {
   componentDidMount() {
