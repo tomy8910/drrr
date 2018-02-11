@@ -8,8 +8,8 @@ import 'animate.css/animate.min.css'
 if (typeof window !== 'undefined') {
   window.__forceSmoothScrollPolyfill__ = true
 }
-import s from 'smoothscroll-polyfill'
-s.polyfill()
+import { polyfill } from 'smoothscroll-polyfill'
+polyfill()
 
 class TemplateWrapper extends React.Component {
   componentDidMount() {
