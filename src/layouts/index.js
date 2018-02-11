@@ -8,12 +8,7 @@ import 'animate.css/animate.min.css'
 if (typeof window !== 'undefined') {
   window.__forceSmoothScrollPolyfill__ = true
 }
-import { polyfill } from 'smoothscroll-polyfill'
-
-if (typeof polyfill !== 'function') {
-  polyfill()
-  console.log('RAN')
-}
+require('smoothscroll-polyfill').polyfill()
 
 class TemplateWrapper extends React.Component {
   componentDidMount() {
