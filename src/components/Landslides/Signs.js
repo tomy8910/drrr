@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-
+import { MainH3, MainUL, Sign } from '../../DoubleStyles'
 export default class Signs extends Component {
   render() {
     return (
-      <div>
-        {/* ADD SOME SVG ICONS BEFORE EACH */}
-        <h3>Landslide Signs</h3>
-        <ul>
+      <Sign>
+        <MainH3>Landslide Signs</MainH3>
+        <MainUL>
           <li>leaning door jams and windows</li>
           <li>cracks in concrete floors and windows</li>
           <li>open spaces between walls and between stairs</li>
@@ -16,8 +15,8 @@ export default class Signs extends Component {
           <li>emergence of springs or seepages</li>
           <li>leaning trees, poles, and retaining walls</li>
           <li>rumbling sound which may increasingly become louder</li>
-        </ul>
-      </div>
+        </MainUL>
+      </Sign>
     )
   }
 }

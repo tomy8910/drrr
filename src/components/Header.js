@@ -22,6 +22,8 @@ const FlexMe = styled.nav`
   display: flex;
   position: fixed;
   top: 0;
+
+  z-index: 9999;
   transition: transform 0.2s ease-in-out;
   width: 100%;
   height: 40px;
