@@ -8,7 +8,7 @@
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-html') {
     config.loader('null', {
-      test: /webfontloader|smoothscroll-polyfill/,
+      test: /webfontloader|smoothscroll-polyfill|headroom.js/,
       loader: 'null-loader'
     })
   }
