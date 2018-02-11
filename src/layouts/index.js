@@ -9,7 +9,11 @@ if (typeof window !== 'undefined') {
   window.__forceSmoothScrollPolyfill__ = true
 }
 import { polyfill } from 'smoothscroll-polyfill'
-polyfill()
+
+if (typeof polyfill !== 'function') {
+  polyfill()
+  console.log('RAN')
+}
 
 class TemplateWrapper extends React.Component {
   componentDidMount() {
