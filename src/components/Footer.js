@@ -13,11 +13,12 @@ const FooterStyles = styled.footer`
   font-size: 0.75rem; /* ms(-1) */
 `
 
-const SpecialLink = styled(Link)`
-  text-decoration: none;
+const SpecialLink = styled.li`
+  list-style: none;
   color: #555;
   padding-left: 8px;
   padding-right: 8px;
+  cursor: pointer;
 `
 
 const SpecialP = styled.p`
@@ -29,8 +30,12 @@ class Footer extends Component {
     return (
       <FooterStyles>
         <SpecialP>Made with Love by INSERT LOGO HERE</SpecialP>
-        <SpecialLink to="/landslides/">Landslides</SpecialLink>
-        <SpecialLink to="/sinkholes/">Sinkholes</SpecialLink>
+        <SpecialLink onClick={this.props.onClickLandslide}>
+          Landslides
+        </SpecialLink>
+        <SpecialLink onClick={this.props.onClickSinkhole}>
+          Sinkholes
+        </SpecialLink>
       </FooterStyles>
     )
   }

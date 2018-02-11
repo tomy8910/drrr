@@ -9,6 +9,7 @@ const SpecialListItem = styled.li`
   padding: 0 10px 0 10px;
   color: #555;
   list-style: none;
+  cursor: pointer;
 
   ${props =>
     props.push &&
@@ -42,8 +43,12 @@ class Header extends Component {
     return (
       <FlexMe innerRef={a => (this.nav = a)}>
         <SpecialListItem push="true">Hello First</SpecialListItem>
-        <SpecialListItem>landslides</SpecialListItem>
-        <SpecialListItem>sinkholes</SpecialListItem>
+        <SpecialListItem onClick={this.props.onClickLandslide}>
+          landslides
+        </SpecialListItem>
+        <SpecialListItem onClick={this.props.onClickSinkhole}>
+          sinkholes
+        </SpecialListItem>
       </FlexMe>
     )
   }

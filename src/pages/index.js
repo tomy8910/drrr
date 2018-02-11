@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import styled from 'styled-components'
 import Hero from '../components/Heroe'
 import Landslide from '../components/Landslides/'
+import Sinkholes from '../components/Sinkholes/'
 
 const IndexDiv = styled.div`
   display: flex;
@@ -18,19 +19,30 @@ const Body = styled.main`
 `
 
 class IndexPage extends React.Component {
-  scrollLandslideIntoView = () => {
+  onClickLandslide = () => {
     this.landslide.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  onClickSinkhole = () => {
+    this.sinkhole.scrollIntoView({ behavior: 'smooth' })
   }
 
   render() {
     return (
       <IndexDiv>
-        <Header />
-        <Hero onClick={this.scrollLandslideIntoView} />
+        <Header
+          onClickLandslide={this.onClickLandslide}
+          onClickSinkhole={this.onClickSinkhole}
+        />
+        <Hero onClickLandslide={this.onClickLandslide} />
         <Body>
           <Landslide setRef={el => (this.landslide = el)} />
+          <Sinkholes setRef={el => (this.sinkhole = el)} />
         </Body>
-        <Footer />
+        <Footer
+          onClickLandslide={this.onClickLandslide}
+          onClickSinkhole={this.onClickSinkhole}
+        />
       </IndexDiv>
     )
   }

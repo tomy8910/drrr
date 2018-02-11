@@ -37,7 +37,7 @@ const MoreSpacing = styled.div`
 
 class Heroe extends Component {
   render() {
-    const { onClick } = this.props
+    const { onClickLandslide } = this.props
     return (
       <Hero>
         <SmallBigSpaced>what are</SmallBigSpaced>
@@ -49,7 +49,7 @@ class Heroe extends Component {
         <svg
           viewBox="0 0 24 24"
           className="mds-icon pulse animated flash infinite"
-          onClick={onClick}
+          onClick={onClickLandslide}
         >
           <path d="M3.515 7.757L12 16.243l8.485-8.486" />
         </svg>
