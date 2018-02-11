@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import './minireset.css'
 import './index.css'
 import 'animate.css/animate.min.css'
-if (window !== undefined) {
+if (typeof window !== undefined) {
   window.__forceSmoothScrollPolyfill__ = true
 }
 import s from 'smoothscroll-polyfill'
