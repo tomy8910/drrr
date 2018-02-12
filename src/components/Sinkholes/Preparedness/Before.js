@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { MainUL, MainH4, PreparednessDiv } from '../../../DoubleStyles'
 
 class Before extends Component {
   render() {
     return (
-      <div>
-        <h4>Before a Sinkhole</h4>
-        <ul>
+      <PreparednessDiv>
+        <MainH4>Before a Sinkhole</MainH4>
+        <MainUL>
           <li>
             Signs that indicate sinkhole formation, especially in regions where
             they are most likely to occur, should be interpreted by inspectors
@@ -58,8 +59,8 @@ class Before extends Component {
               <li>Sudden ground settlement</li>
             </ul>
           </li>
-        </ul>
-      </div>
+        </MainUL>
+      </PreparednessDiv>
     )
   }
 }

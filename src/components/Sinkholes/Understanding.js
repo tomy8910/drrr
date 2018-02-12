@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { MainH2, Paragraph } from '../../DoubleStyles'
 
 class SinkholeUnderstanding extends Component {
   render() {
     return (
       <div>
-        <h2>Understanding Sinkholes</h2>
-        <p>
+        <MainH2>Understanding Sinkholes</MainH2>
+        <Paragraph>
           <strong>Sinkholes</strong> are geologic formation caused by exposure
           to the water, erosion, and ground movement. A sinkhole is usually
           formed by erosion of bedrocks composed of soft minerals and rocks such
@@ -18,15 +19,15 @@ class SinkholeUnderstanding extends Component {
           to the formation of sinkholes as water flowing to and from them erodes
           the bedrock. Sinkholes can also be formed due to the lack of water
           that suppoerts thin earth surface.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph>
           The principle in the formation of a sinkhole is similar to the
           formation of caves and underground rivers. The sea water dissolves the
           bedrock and creates the caves. When there is an earthquake, the ground
           above can collapse causing a sinkhole. The ground shaking during
           earthquake can cause the consolidation of the soil particles in
           coastal areas.
-        </p>
+        </Paragraph>
       </div>
     )
   }

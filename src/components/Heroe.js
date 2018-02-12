@@ -40,7 +40,8 @@ const Smaller = styled.span`
   font-size: 1.333rem;
   font-weight: 700;
   position: relative;
-  z-index: 999;
+	z-index: 999;
+	margin-bottom: 16px;
 `
 
 const MoreSpacing = styled.div`

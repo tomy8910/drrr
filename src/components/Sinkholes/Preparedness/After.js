@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 
+import { MainUL, MainH4, PreparednessDiv } from '../../../DoubleStyles'
+
 class AfterLandslide extends Component {
   render() {
     return (
-      <div>
-        <h4>After a Sinkhole</h4>
-        <ul>
+      <PreparednessDiv>
+        <MainH4>After a Sinkhole</MainH4>
+        <MainUL>
           <li>Do not fill a hole with trash or debris.</li>
           <li>Use only clean soil or fill, without organic content.</li>
           <li>
@@ -18,14 +20,9 @@ class AfterLandslide extends Component {
             Try to divert any extra water away from a hole before, during and
             after filling.
           </li>
-          <li>
-            Use qualified, reliable individuals or companies for repair. Filling
-            a sinkhole with waste materials is illegal and may cause groundwater
-            contamination for which the property owner would be liable.
-          </li>
-          <li />
-        </ul>
-      </div>
+          <li>Use qualified, reliable individuals or companies for repair.</li>
+        </MainUL>
+      </PreparednessDiv>
     )
   }
 }

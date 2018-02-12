@@ -8,9 +8,14 @@ import Image from 'gatsby-image'
 
 const Landslides = styled.div`
   margin-bottom: 2.5rem;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* display: grid;
+  grid-template-rows: auto 1fr;
+
+  justify-items: center; */
 `
 
 export default class Land extends Component {
@@ -25,9 +30,9 @@ export default class Land extends Component {
           alt="Nigga"
           style={{
             height: '200px',
-            alignSelf: 'stretch',
-            width: '1300px',
-            marginBottom: '24px'
+            marginBottom: '24px',
+            justifySelf: 'stretch',
+            width: '1500px'
           }}
         />
         <Understanding />

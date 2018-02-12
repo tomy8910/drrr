@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+
+import { MainH3, MainUL, Sign } from '../../DoubleStyles'
 
 class SinkholeSigns extends Component {
   render() {
     return (
-      <div>
-        <h3>Sinkhole Signs</h3>
-        <ul>
+      <Sign>
+        <MainH3>Sinkhole Signs</MainH3>
+        <MainUL>
           <li>Trees or fence posts that tilt or fall</li>
           <li>Foundations that slant</li>
           <li>New small ponds that appear after rain</li>
@@ -16,8 +17,8 @@ class SinkholeSigns extends Component {
           <li>Dead patches of grass or plants</li>
           <li>Sinkholes in the neighborhood</li>
           <li>Wilted vegetation in a limited area</li>
-        </ul>
-      </div>
+        </MainUL>
+      </Sign>
     )
   }
 }

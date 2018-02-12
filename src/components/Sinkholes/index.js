@@ -5,7 +5,13 @@ import Preparedness from './Preparedness/'
 import Signs from './Signs'
 import { MainH1 } from '../../DoubleStyles'
 
-const Sinkhole = styled.div``
+const Sinkhole = styled.div`
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 class Sinkholes extends Component {
   render() {

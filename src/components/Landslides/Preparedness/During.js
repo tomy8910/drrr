@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-
+import { MainUL, MainH4, PreparednessDiv } from '../../../DoubleStyles'
 class DuringLandslide extends Component {
   render() {
     return (
-      <div>
-        <h4>During a Landslide</h4>
-        <ul>
+      <PreparednessDiv>
+        <MainH4>During a Landslide</MainH4>
+        <MainUL>
           <li>
             When indoors in a landslide area and there is no time to evacuate,
             stay inside and hide under a sturdy and stable object like a table.
@@ -25,8 +25,8 @@ class DuringLandslide extends Component {
               </li>
             </ul>
           </li>
-        </ul>
-      </div>
+        </MainUL>
+      </PreparednessDiv>
     )
   }
 }
