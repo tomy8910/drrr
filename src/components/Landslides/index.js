@@ -20,7 +20,6 @@ const Landslides = styled.div`
 
 export default class Land extends Component {
   render() {
-    console.log(this.props)
     const { setRef } = this.props
     return (
       <Landslides innerRef={setRef}>
