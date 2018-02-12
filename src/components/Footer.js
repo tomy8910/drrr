@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import Tomy from './Tomy'
 
 const FooterStyles = styled.footer`
   display: flex;
@@ -29,7 +30,9 @@ class Footer extends Component {
   render() {
     return (
       <FooterStyles>
-        <SpecialP>Made with Love by INSERT LOGO HERE</SpecialP>
+        <SpecialP onClick={this.props.onClickGuide}>
+          <Tomy />
+        </SpecialP>
         <SpecialLink onClick={this.props.onClickLandslide}>
           Landslides
         </SpecialLink>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
 import _throttle from 'lodash.throttle'
 import Headroom from 'headroom.js'
+import Tomy from './Tomy'
 
 const SpecialListItem = styled.li`
   font-variant: small-caps;
@@ -44,7 +45,9 @@ class Header extends Component {
   render() {
     return (
       <FlexMe innerRef={a => (this.nav = a)}>
-        <SpecialListItem push="true">Hello First</SpecialListItem>
+        <SpecialListItem push="true" onClick={this.props.onClickGuide}>
+          <Tomy />
+        </SpecialListItem>
         <SpecialListItem onClick={this.props.onClickLandslide}>
           landslides
         </SpecialListItem>

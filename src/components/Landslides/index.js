@@ -29,7 +29,7 @@ export default class Land extends Component {
           sizes={this.props.img.sizes}
           alt="Nigga"
           style={{
-            height: '200px',
+            height: '300px',
             marginBottom: '24px',
             justifySelf: 'stretch',
             width: '1500px'
